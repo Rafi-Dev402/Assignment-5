@@ -68,7 +68,7 @@
      <!-- Main Section -->
      <main class="mb-20">
       <!-- Card Section -->
-      <section id="card-section" class="md:container lg:container p-3 sm:p-3 lg:py-10 mx-auto ">
+      <section id="card-section" class="hidden md:container lg:container p-3 sm:p-3 lg:py-10 mx-auto ">
 
           <!-- Card-1 Start -->
            <div class="border-2  rounded-2xl max-w-7xl bg-white flex flex-col lg:flex-row justify-center items-center  gap-8  p-8 mb-8 mx-auto"
@@ -110,17 +110,17 @@
                    <div class="items-center lg:items-start">
                       <button class="flex justify-center items-center px-4 py-3 bg-[#1111110D] rounded-lg mb-4 ">
                           <img src="./assets/coin.png" alt="">
-                          <span class="ml-2 font-bold text-base text-descripTxt">0</span>
+                          <span id="feni-total" class="ml-2 font-bold text-base text-descripTxt">0</span>
                           <span class="ml-2 font-bold text-base text-descripTxt">BDT</span>
                        </button>
                    </div>
                    <h3 class="mb-4 text-xl font-bold text-headerTxt">Donate for Flood Relief in Feni,Bangladesh</h3>
                    <p class="max-w-[700px] mb-6 text-descripTxt text-base font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                    <div class="mb-6">
-                      <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                      <input id="Feni-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                    </div>
                    <div>
-                      <button class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
+                      <button id="feni-donate-btn" class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
                    </div>
               </div>
            </div>
@@ -138,17 +138,17 @@
                    <div class="items-center lg:items-start">
                       <button class="flex justify-center items-center px-4 py-3 bg-[#1111110D] rounded-lg mb-4 ">
                           <img src="./assets/coin.png" alt="">
-                          <span class="ml-2 font-bold text-base text-descripTxt">0</span>
+                          <span id="quota-total" class="ml-2 font-bold text-base text-descripTxt">50</span>
                           <span class="ml-2 font-bold text-base text-descripTxt">BDT</span>
                        </button>
                    </div>
                    <h3 class="mb-4 text-xl font-bold text-headerTxt">Aid for Injured in the Quota Movement</h3>
                    <p class="max-w-[700px] mb-6 text-descripTxt text-base font-light"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need..</p>
                    <div class="mb-6">
-                      <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                      <input id="quota-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                    </div>
                    <div>
-                      <button class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
+                      <button id="Quota-donate-btn" class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
                    </div>
               </div>
            </div>
@@ -169,4 +169,6 @@
 
 <script src="./js/index.js"></script>
 <script src="./js/utilities.js"></script>
+<script src="./js/feni.js"></script>
+<script src="./js/quota.js"></script>
 </html>

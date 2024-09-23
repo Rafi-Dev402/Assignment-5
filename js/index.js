@@ -50,5 +50,6 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         document.getElementById('noalhaili-total').innerText = totalNoalhali.toFixed(2);
         const newMainBlance = mainBlance - inputBlance;
         document.getElementById('available-blance').innerText = newMainBlance.toFixed(2);
+        return alert('Donation Complete');
     }    
 })
