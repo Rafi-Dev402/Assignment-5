@@ -92,7 +92,7 @@
                       <input id="noakhali-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                    </div>
                    <div>
-                      <button id="noakhaliDon-btn" class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
+                      <button id="noakhaliDon-btn"  class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
                    </div>
               </div>
            </div>
@@ -120,7 +120,7 @@
                       <input id="Feni-input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                    </div>
                    <div>
-                      <button id="feni-donate-btn" class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
+                      <button id="feni-donate-btn"  class="btn w-full bg-btnBG text-lg font-semibold text-headerTxt">Donate Now</button>
                    </div>
               </div>
            </div>
@@ -158,7 +158,29 @@
       <section id="history-section" class="hidden md:container lg:container mx-auto p-3 sm:p-3 lg:py-10">
    
       </section>
-      
+
+      <!-- modal -->
+      <!-- Open the modal using ID.showModal() method -->
+           <div id="modal" class="hidden">
+            <button class="btn " onclick="my_modal_1.showModal()">open modal</button>
+            <dialog id="my_modal_1" class="modal">
+            <div class="modal-box items-center">
+                <h3 class="text-4xl font-bold text-center mb-5 text-headerTxt">Congrates!</h3>
+                <div class="flex justify-center items-center mb-7">
+                    <img src="./assets/coin.png" alt="">
+                </div>
+                <p class="mb-2 text-center font-medium">You Have Donated for Humankind</p>
+                <h3 class="text-lg font-bold text-center">Successfully</h3>
+                <div class="modal-action flex justify-center items-center">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn font-bold">Close Confirmation</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </dialog>
+           </div>
   </main>
 
   <!-- Footer Section -->

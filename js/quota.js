@@ -2,12 +2,16 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
     const mainBlance = htmlValueBtID('available-blance');
     const quota = htmlValueBtID('quota-total');
     const inputBlanceQuota = inputValueByID('quota-input');
+   
+    
         
     
     if(mainBlance<inputBlanceQuota){
-        return alert('Insufficient Blance')
+        
+        return alert('Insufficient Blance');
     }
     if(isNaN(inputBlanceQuota) || inputBlanceQuota<0){
+        
         return alert('Enter a valid number of amount.')
     }
     else{
@@ -30,7 +34,7 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
         
         `
         document.getElementById('history-section').appendChild(div);
+        
 
-        return alert('Donated complete for Aid for Injured in the Quota Movement, Bangladesh')
     }    
 })

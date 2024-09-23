@@ -37,12 +37,15 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
     const mainBlance = htmlValueBtID('available-blance');
     const noakhali = htmlValueBtID('noalhaili-total');
     const inputBlance = inputValueByID('noakhali-input');
+    
         
     
     if(mainBlance<inputBlance){
+       
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlance) || inputBlance<0   ){
+        
         return alert('Enter a valid number of am ount.')
     }
     else{
@@ -66,10 +69,8 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         
         `
         document.getElementById('history-section').appendChild(div);
-
-
-        return alert('Donated complete for famine-2024 at Noakhali, Bangladesh')
-
+        
+        
     } 
 
 })

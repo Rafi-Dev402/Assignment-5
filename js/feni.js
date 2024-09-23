@@ -3,12 +3,16 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
     const mainBlance = htmlValueBtID('available-blance');
     const feni = htmlValueBtID('feni-total');
     const inputBlanceFeni = inputValueByID('Feni-input');
+
+    
         
     
     if(mainBlance<inputBlanceFeni){
+        
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlanceFeni) || inputBlanceFeni<0   ){
+        
         return alert('Enter a valid number of amount.')
     }
     else{
@@ -32,6 +36,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
         `
         document.getElementById('history-section').appendChild(div);
 
-        return alert('Donated complete for Flood Relief in Feni,Bangladesh')
+        
+
     }    
 })
