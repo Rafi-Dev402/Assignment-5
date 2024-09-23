@@ -8,7 +8,7 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlanceQuota) || inputBlanceQuota<0){
-        return alert('Enter a valid number of ammount.')
+        return alert('Enter a valid number of amount.')
     }
     else{
         const totalQuota = quota + inputBlanceQuota;

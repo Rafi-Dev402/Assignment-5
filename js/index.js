@@ -43,7 +43,7 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlance) || inputBlance<0   ){
-        return alert('Enter a valid number of ammount.')
+        return alert('Enter a valid number of amount.')
     }
     else{
         const totalNoalhali = noakhali + inputBlance;

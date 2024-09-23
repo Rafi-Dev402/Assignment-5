@@ -9,7 +9,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlanceFeni) || inputBlanceFeni<0   ){
-        return alert('Enter a valid number of ammount.')
+        return alert('Enter a valid number of amount.')
     }
     else{
         const totalFeni = feni + inputBlanceFeni;
