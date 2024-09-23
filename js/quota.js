@@ -15,6 +15,22 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
         document.getElementById('quota-total').innerText = totalQuota.toFixed(2);
         const newMainBlance3 = mainBlance - inputBlanceQuota;
         document.getElementById('available-blance').innerText = newMainBlance3.toFixed(2);
-        return alert('Donation Complete');
+        
+        const currentDateTime = new Date();
+        console.log(currentDateTime);
+
+        const div = document.createElement('div');
+        div.classList.add("border-2");
+        div.classList.add("p-8");
+        div.classList.add("rounded-2xl");
+        div.classList.add("mb-6");
+        div.innerHTML = `
+            <h2 class="text-headerTxt text-xl font-bold mb-4">${inputBlanceQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
+            <p class="text-descripTxt text-base font-light">Date: ${currentDateTime}</p>
+        
+        `
+        document.getElementById('history-section').appendChild(div);
+
+        return alert('Donated complete for Aid for Injured in the Quota Movement, Bangladesh')
     }    
 })

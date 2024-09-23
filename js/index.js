@@ -43,13 +43,33 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         return alert('Insufficient Blance')
     }
     if(isNaN(inputBlance) || inputBlance<0   ){
-        return alert('Enter a valid number of amount.')
+        return alert('Enter a valid number of am ount.')
     }
     else{
         const totalNoalhali = noakhali + inputBlance;
         document.getElementById('noalhaili-total').innerText = totalNoalhali.toFixed(2);
         const newMainBlance = mainBlance - inputBlance;
         document.getElementById('available-blance').innerText = newMainBlance.toFixed(2);
-        return alert('Donation Complete');
-    }    
+       
+
+        const currentDateTime = new Date();
+        console.log(currentDateTime);
+
+        const div = document.createElement('div');
+        div.classList.add("border-2");
+        div.classList.add("p-8");
+        div.classList.add("rounded-2xl");
+        div.classList.add("mb-6");
+        div.innerHTML = `
+            <h2 class="text-headerTxt text-xl font-bold mb-4">${inputBlance} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h2>
+            <p class="text-descripTxt text-base font-light">Date: ${currentDateTime}</p>
+        
+        `
+        document.getElementById('history-section').appendChild(div);
+
+
+        return alert('Donated complete for famine-2024 at Noakhali, Bangladesh')
+
+    } 
+
 })
