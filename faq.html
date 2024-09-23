@@ -41,16 +41,16 @@
             <div class="navbar bg-base-100  md:container lg:container mx-auto p-3 sm:p-3 lg:py-10 bg-navBG ">
                 <div class="navbar-start">
                   
-                  <button class="btn bg-btnBG text-lg font-semibold px-8 text-headerTxt">Home</button>
+                  <button id="home-btn" class="btn bg-btnBG text-lg font-semibold px-8 text-headerTxt">Home</button>
                 </div>
                 <div class="navbar-center  lg:flex">
                   <!-- Coin -->
-                   <img src="/assets/logo.png" alt="">
+                   <img src="./assets/logo.png" alt="">
                    <span class="ml-4 hidden sm:block text-xl font-semibold text-headerTxt">Donate </span>
                    <span class="ml-2 hidden sm:block text-xl font-semibold text-headerTxt">Bangladesh</span>
                 </div>
                 <div class="navbar-end">
-                  <img class="mr-2" src="assets/coin.png" alt="">
+                  <img class="mr-2" src="./assets/coin.png" alt="">
                   <span class="mr-2 text-xl font-bold tex-descripTxt">5500</span>
                   <span class="text-lg font-bold tex-descripTxt " >BDT</span>
                 </div>
@@ -92,5 +92,10 @@
         </section>
         
     </main>
+    <script>
+      document.getElementById('home-btn').addEventListener('click',function(){
+        window.location.href = 'index.html';
+      })
+    </script>
 </body>
 </html>
