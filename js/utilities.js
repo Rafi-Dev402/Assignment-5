@@ -10,3 +10,4 @@ function htmlValueBtID(id){
     const htmlValue = parseFloat(document.getElementById(id).innerText);
     return htmlValue;
 }
+

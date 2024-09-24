@@ -9,9 +9,9 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
     
     if(mainBlance<inputBlanceFeni){
         
-        return alert('Insufficient Blance')
+        return alert('Insufficient Balance')
     }
-    if(isNaN(inputBlanceFeni) || inputBlanceFeni<0   ){
+    if(isNaN(inputBlanceFeni) || inputBlanceFeni<=0){
         
         return alert('Enter a valid number of amount.')
     }
@@ -36,7 +36,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
         `
         document.getElementById('history-section').appendChild(div);
 
-        
+        return alert(inputBlanceFeni +' Taka is successfully donated for Flood Relief in Feni,Bangladesh');
 
     }    
 })

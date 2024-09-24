@@ -8,9 +8,9 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
     
     if(mainBlance<inputBlanceQuota){
         
-        return alert('Insufficient Blance');
+        return alert('Insufficient Balance');
     }
-    if(isNaN(inputBlanceQuota) || inputBlanceQuota<0){
+    if(isNaN(inputBlanceQuota) || inputBlanceQuota<=0){
         
         return alert('Enter a valid number of amount.')
     }
@@ -35,6 +35,7 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
         `
         document.getElementById('history-section').appendChild(div);
         
+        return alert(inputBlanceQuota +' Taka is successfully donated for Aid for Injured in the Quota Movement, Bangladesh');
 
     }    
 })

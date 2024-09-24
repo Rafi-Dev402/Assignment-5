@@ -5,7 +5,7 @@ let btnContainerClassList = document.getElementById('btn-container').classList;
 let cardSectionClassList = document.getElementById('card-section').classList;
 let historySectionClassList = document.getElementById('history-section').classList;
 
-
+const modal =document.getElementById('my_modal_1');
 
 
 // blog-btn Function
@@ -37,16 +37,17 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
     const mainBlance = htmlValueBtID('available-blance');
     const noakhali = htmlValueBtID('noalhaili-total');
     const inputBlance = inputValueByID('noakhali-input');
+   
     
         
     
     if(mainBlance<inputBlance){
        
-        return alert('Insufficient Blance')
+        return alert('Insufficient Balance')
     }
-    if(isNaN(inputBlance) || inputBlance<0   ){
+    if(isNaN(inputBlance) || inputBlance<=0 ){
         
-        return alert('Enter a valid number of am ount.')
+        return alert('Enter a valid number of amount.')
     }
     else{
         const totalNoalhali = noakhali + inputBlance;
@@ -69,8 +70,9 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         
         `
         document.getElementById('history-section').appendChild(div);
-        
-        
+
+        return alert(inputBlance +' Taka is successfully donated for famine-2024 at Noakhali, Bangladesh');
     } 
+    
 
 })
