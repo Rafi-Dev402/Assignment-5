@@ -35,7 +35,10 @@ document.getElementById('Quota-donate-btn').addEventListener('click', function()
         `
         document.getElementById('history-section').appendChild(div);
         
-        return alert(inputBlanceQuota +' Taka is successfully donated for Aid for Injured in the Quota Movement, Bangladesh');
+        // return alert(inputBlanceQuota +' Taka is successfully donated for Aid for Injured in the Quota Movement, Bangladesh');
 
     }    
+        document.getElementById('my_modal_1').showModal();
+
+        
 })

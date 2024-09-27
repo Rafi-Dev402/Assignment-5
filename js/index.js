@@ -45,7 +45,7 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
        
         return alert('Insufficient Balance')
     }
-    if(isNaN(inputBlance) || inputBlance<=0 ){
+    if( isNaN(inputBlance) || inputBlance<=0 ){
         
         return alert('Enter a valid number of amount.')
     }
@@ -71,8 +71,11 @@ document.getElementById('noakhaliDon-btn').addEventListener('click',function(){
         `
         document.getElementById('history-section').appendChild(div);
 
-        return alert(inputBlance +' Taka is successfully donated for famine-2024 at Noakhali, Bangladesh');
+        // return alert(inputBlance +' Taka is successfully donated for famine-2024 at Noakhali, Bangladesh');
     } 
     
+        document.getElementById('my_modal_1').showModal();
 
+
+        
 })
